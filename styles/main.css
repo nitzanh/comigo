@@ -1,0 +1,83 @@
+@media (max-width: 700px) {
+  .navigation {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.navigation a {
+  color: rgb(61,61,61);
+}
+
+.navigation ul > li > a:hover,
+.navigation ul > li > a:focus {
+  color: red;
+}
+
+.navigation ul ul a:hover,
+.navigation ul ul a:focus {
+  color: white;
+  background: red;
+}
+
+.footer-gray {
+  background: #1E2024;
+}
+
+
+.footer-nav > li > a{
+  color: white;
+}
+
+.footer-nav ul a{
+  color: rgb(122,122,122);
+}
+
+.footer-nav ul a:hover,
+.footer-nav ul a:focus{
+  color: red;
+}
+
+.footer-bottom {
+  background: #151515;
+}
+
+.footer-bottom p, .footer-bottom a{
+  background: #151515;
+  color: rgb(99,99,99);
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus {
+  color: white;
+}
+
+.blog a{
+  color: white;
+}
+
+.round-btn {
+  text-transform: uppercase;
+  padding: 13px;
+  border-radius: 30px;
+  transition: all 150ms ease-in-out;
+  display: inline-block;
+}
+
+.round-btn:hover, .round-btn:focus {
+  box-shadow: 0 12px 32px rgba(0,0,0,.15);
+  transform: translateY(-3px);
+}
+
+.red-btn {
+  background: #FF313E;
+  color: white;
+}
+
+.white-btn {
+  background: white;
+  color: red;
+}
