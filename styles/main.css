@@ -4,17 +4,34 @@
   }
 }
 
+body {
+  font-family: 'Source Sans Pro', serif;
+}
+
 a {
   text-decoration: none;
   outline: none;
 }
 
-.navigation a {
-  color: rgb(61,61,61);
+a:visited {
+  color: white;
 }
 
-.navigation ul > li > a:hover,
-.navigation ul > li > a:focus {
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  color: rgb(61,61,61);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.navigation > ul > li > a:hover,
+.navigation > ul > li > a:focus {
   color: red;
 }
 
@@ -31,6 +48,7 @@ a {
 
 .footer-nav > li > a{
   color: white;
+  /*display: inline-block;*/
 }
 
 .footer-nav ul a{
@@ -55,10 +73,6 @@ a {
   color: white;
 }
 
-.blog a{
-  color: white;
-}
-
 .round-btn {
   text-transform: uppercase;
   padding: 13px;
@@ -80,4 +94,137 @@ a {
 .white-btn {
   background: white;
   color: red;
+}
+
+.main-section {
+  height: 600px;
+  background-image: url("../assets/main-bg/home-brain-image-new-1920x816.png"), url("../assets/main-bg/home-featured-bg.png");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+.main-section div {
+  width:400px;
+  height: 300px;
+  display: inline-block;
+}
+
+
+.why-comigo {
+  height: 500px;
+  width: 100%;
+}
+
+.why-comigo div {
+  display: inline-block;
+  margin-top: 100px;
+}
+
+.white {
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.services section {
+  width: 50%;
+  height: 600px;
+}
+
+.enhance-tv {
+  background-image: url("../assets/other/ic-EI-cloud-brain-hp.png"), url("../assets/other/home-tv-service-bg1.png");
+  background-repeat: no-repeat;
+  background-position: center 10%, center;
+  background-size: 40%, auto;
+  float: left;
+  /*padding-top: 50%;*/
+}
+
+.enhance-tv div {
+  margin-top: 40%;
+}
+
+.comigo-stb div {
+  margin-top: 50%;
+  margin-left: 10%;
+}
+
+.comigo-stb {
+  background-image: url("../assets/other/ic-stb-screens.png"), url("../assets/other/home-tv-service-bg2.png");
+  background-repeat: no-repeat;
+  background-position: center 10%, center;
+  background-size: 40%, auto;
+  float: right;
+}
+
+.red-background {
+  background-color: #FF313E;
+}
+
+.social-media {
+  width: 200px;
+  height: 200px;
+  background-color: #EFEFEF;
+}
+
+.schedule-meeting {
+  width: 800px;
+  height:400px;
+  background-color: #E8E8E8;
+}
+
+.blog {
+  height:500px;
+  width: 100%;
+  color: white;
+}
+.blog-heading {
+  height: 500px;
+  width: calc(100%/6);
+  float: left;
+  background-color: #E0554F;
+}
+
+.blog-posts li {
+  height: 500px;
+  width: calc(100%/6);
+  float: left;
+}
+
+.blog-posts a {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+.blog-posts li:nth-child(1) {
+  background-image: url("../assets/blog/ibc_post_EI-750x508.png");
+  background-position: center top;
+}
+
+.blog-posts li:nth-child(2) {
+  background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
+  background-position: center top;
+}
+
+.blog-posts li:nth-child(3) {
+  background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+  background-position: center top;
+}
+
+.blog-posts li:nth-child(4) {
+  background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
+  background-position: center top;
+}
+
+.blog-posts li:nth-child(5) {
+  background-image: url("../assets/blog/post_quality-750x508.jpeg");
+  background-position: center top;
+}
+
+.learn-more {
+  background-color: #FF313E;
 }
