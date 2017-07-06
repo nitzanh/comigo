@@ -33,7 +33,7 @@ h3 {
 }
 
 a:visited {
-  color: white;
+  color: inherit;
 }
 
 .reset-list {
@@ -42,16 +42,33 @@ a:visited {
   padding: 0;
 }
 
+.top-header {
+  line-height: 40px;
+}
+
 .navigation a {
   color: rgb(61,61,61);
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  /*width: 100px;*/
+  /*height: 100px;*/
+  font-size: 1.12rem;
+}
+
+.navigation {
+  display: inline-block;
+}
+
+.navigation > ul > li {
+  display: inline-block;
 }
 
 .navigation > ul > li > a:hover,
 .navigation > ul > li > a:focus {
   color: red;
+}
+
+.navigation ul ul {
+  display: none;
 }
 
 .navigation ul ul a:hover,
@@ -70,6 +87,7 @@ a:visited {
 }
 
 .footer-nav ul a{
+  font-size: 1.12rem;
   color: rgb(122,122,122);
 }
 
@@ -79,6 +97,7 @@ a:visited {
 }
 
 .footer-bottom {
+  font-size: 1.015rem;
   background: #151515;
 }
 
@@ -98,36 +117,43 @@ a:visited {
   background-size: contain, cover;
   background-repeat: no-repeat;
   padding-top: 200px;
-  font-size: 2rem;
 }
 
 .main-section div {
-  width:60%;
+  width:80%;
   height: 30vw;
   display: inline-block;
 }
 
+.main-section h2 {
+  font-size: 6.3rem;
+  font-weight: 400;
+}
+
 .why-comigo {
-  height: 500px;
+  height: 30vw;
   width: 100%;
-  padding-top: 80px;
-  font-size: 2rem;
-  font-weight: 300;
 }
 
 .why-comigo div {
-  max-width: 500px;
   width: 70%;
   margin: 0 auto;
+  font-size: 2rem;
+}
+
+.why-comigo h2 {
+  line-height: 6.3rem;
+  font-size: 6.3rem;
 }
 
 .round-btn {
   text-transform: uppercase;
+  letter-spacing: 0.09375rem;
   padding: 15px 25px;
   border-radius: 30px;
   transition: all 150ms ease-in-out;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   font-weight: 300;
 }
 
@@ -150,8 +176,8 @@ a:visited {
   color: white;
 }
 
-.normal {
-  font-weight: 400;
+.uppercase {
+  text-transform: uppercase;
 }
 
 .center-text {
@@ -195,6 +221,16 @@ a:visited {
   background-position: center 10%, center;
   background-size: 40%, auto;
   float: right;
+}
+
+.enhance-tv h2,
+.comigo-stb h2 {
+  font-size: 3.5rem;
+}
+
+.enhance-tv h3,
+.comigo-stb h3 {
+  font-size: 1.4rem;
 }
 
 .red-background {
@@ -242,30 +278,48 @@ a:visited {
 .blog-posts li:nth-child(1) {
   background-image: url("../assets/blog/ibc_post_EI-750x508.png");
   background-position: center top;
+  background-size: auto 100%;
 }
 
 .blog-posts li:nth-child(2) {
   background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
   background-position: center top;
+  background-size: auto 100%;
 }
 
 .blog-posts li:nth-child(3) {
   background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
   background-position: center top;
+  background-size: auto 100%;
 }
 
 .blog-posts li:nth-child(4) {
   background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
   background-position: center top;
+  background-size: auto 100%;
 }
 
 .blog-posts li:nth-child(5) {
   background-image: url("../assets/blog/post_quality-750x508.jpeg");
   background-position: center top;
+  background-size: auto 100%;
 }
 
 .learn-more {
-  height: 20vw;
-  width: 20vw;
+  height: 40vw;
+  width: 40vw;
+}
+
+.learn-more-heading {
+  background-color: #F9F9F9;
+  font-size: 5.25rem;
+}
+
+.learn-more-link {
+  font-size: 1.75rem;
   background-color: #FF313E;
+}
+
+.schedule-demo h2 {
+  font-size: 5.25rem;
 }
