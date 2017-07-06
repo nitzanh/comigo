@@ -93,9 +93,9 @@ a:visited {
 
 
 .main-section {
-  height: 650px;
+  height: 42.5vw;
   background-image: url("../assets/main-bg/home-brain-image-new-1920x816.png"), url("../assets/main-bg/home-featured-bg.png");
-  background-size: 100% auto, cover;
+  background-size: contain, cover;
   background-repeat: no-repeat;
   padding-top: 200px;
   font-size: 2rem;
@@ -103,7 +103,7 @@ a:visited {
 
 .main-section div {
   width:60%;
-  height: 300px;
+  height: 30vw;
   display: inline-block;
 }
 
@@ -158,9 +158,17 @@ a:visited {
   text-align: center;
 }
 
-.services section {
+.services {
+  display: none;
+}
+
+.tv-service {
+  height: 40vw;
+}
+
+.tv-service section {
   width: 50%;
-  height: 600px;
+  height: 100%;
 }
 
 .enhance-tv {
@@ -206,27 +214,29 @@ a:visited {
 }
 
 .blog {
-  height:500px;
-  width: 100%;
   color: white;
 }
+
 .blog-heading {
-  height: 500px;
-  width: calc(100%/6);
-  float: left;
   background-color: #E0554F;
 }
 
-.blog-posts li {
-  height: 500px;
-  width: calc(100%/6);
-  float: left;
+.blog-heading,
+.blog li {
+  height: 36.111vw;
+  width: 16.6666667vw;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+}
+
+.blog-posts {
+  display: inline-block;
 }
 
 .blog-posts a {
   height: 100%;
   width: 100%;
-  display: inline-block;
 }
 
 .blog-posts li:nth-child(1) {
@@ -255,5 +265,7 @@ a:visited {
 }
 
 .learn-more {
+  height: 20vw;
+  width: 20vw;
   background-color: #FF313E;
 }
