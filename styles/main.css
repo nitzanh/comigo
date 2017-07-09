@@ -282,8 +282,35 @@ a:visited {
 }
 
 .blog-posts a {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+.blog-posts a p {
+  position: absolute;
+  margin: 0.5rem;
+  bottom: 0px;
+  left: 0px;
+}
+
+.blog-posts a span {
+  display: inline-block;
+  background-color: #E0554F;
+  width: 100%;
+  padding: 10% 0;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100%;
+}
+
+.blog-posts li {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
 }
 
 .blog-posts li:nth-child(1) {
@@ -314,6 +341,15 @@ a:visited {
   background-image: url("../assets/blog/post_quality-750x508.jpeg");
   background-position: center top;
   background-size: auto 100%;
+}
+
+
+.blog-posts li:hover {
+  background-color: transparent;
+}
+
+.blog-posts li:hover a span {
+  bottom: 100%;
 }
 
 .learn-more {
