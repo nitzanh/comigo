@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro', serif;
+  padding-top: 66px;
 }
 
 section {
@@ -43,7 +44,24 @@ a:visited {
 }
 
 .top-header {
-  line-height: 40px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  height: 66px;
+  line-height: 66px;
+  text-align: right;
+}
+
+.comigo-logo {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+.comigo-logo img {
+  vertical-align: middle;
 }
 
 .navigation a {
@@ -51,11 +69,14 @@ a:visited {
   display: inline-block;
   /*width: 100px;*/
   /*height: 100px;*/
+  padding: 0 10px;
+  text-align: right;
   font-size: 1.12rem;
 }
 
 .navigation {
   display: inline-block;
+  padding: 0 20px;
 }
 
 .navigation > ul > li {
@@ -185,6 +206,12 @@ a:visited {
 
 .white {
   color: white;
+}
+
+.navigation .selected,
+.navigation .selected:hover {
+  font-weight: bold;
+  color: red;
 }
 
 .uppercase {
