@@ -370,3 +370,33 @@ a:visited {
 .schedule-demo h2 {
   font-size: 5.25rem;
 }
+
+.whos-on {
+  position: relative;
+  width: 100%;
+  height:49vw;
+  overflow: hidden;
+}
+
+.whos-on-text {
+  display: inline-block;
+  width: 25%;
+  height: 60%;
+  padding-top: 5%;
+}
+
+.whos-on-text  h2 {
+  font-size: 4.5rem;
+}
+
+.whos-on-text  p {
+  font-size: 1.2rem;
+}
+
+.whos-on-img {
+  height: 80%;
+  width: auto;
+  position: absolute;
+  top:10%;
+  left:48%;
+}
