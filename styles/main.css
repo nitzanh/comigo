@@ -97,19 +97,30 @@ a:visited {
 }
 
 .footer-bottom {
+  width: 100vw;
+  vertical-align: middle;
+  line-height: 4rem;
   font-size: 1.015rem;
   background: #151515;
+  color: rgb(99,99,99);
 }
 
-.footer-bottom p, .footer-bottom a{
-  background: #151515;
-  color: rgb(99,99,99);
+.footer-bottom span:first-child {
+  margin: 0 10%;
+}
+
+.footer-bottom ul,
+.footer-bottom li {
+  display: inline-block;
+}
+
+.pipe-separated li::before {
+  content: " | ";
 }
 
 .footer-bottom a:hover, .footer-bottom a:focus {
   color: white;
 }
-
 
 .main-section {
   height: 42.5vw;
