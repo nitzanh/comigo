@@ -144,6 +144,12 @@ a:visited {
   color: white;
 }
 
+.footer-social-links a {
+  padding: 0.6rem;
+  border: 0.01rem solid rgb(99,99,99);
+  border-radius: 2rem;
+}
+
 .main-section {
   height: 42.5vw;
   background-image: url("../assets/main-bg/home-brain-image-new-1920x816.png"), url("../assets/main-bg/home-featured-bg.png");
@@ -348,9 +354,18 @@ font-weight: 300;
 }
 
 .social-media {
-  width: 200px;
-  height: 200px;
+  width: 20.13888vw;
+  height: 20.13888vw;
+  padding: 3vw;
   background-color: #EFEFEF;
+}
+
+.social-media a {
+  color: white;
+  background: #F14848;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 3rem;
 }
 
 .schedule-meeting {
