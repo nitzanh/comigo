@@ -52,6 +52,7 @@ a:visited {
   height: 66px;
   line-height: 66px;
   text-align: right;
+  z-index: 1;
 }
 
 .comigo-logo {
@@ -223,7 +224,78 @@ a:visited {
 }
 
 .services {
+  position: relative;
+  height: 40.0694444vw;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.services > div {
+  display: inline-block;
+  width: 35vw;
+  padding: 3vw 5vw;
+}
+
+.services > div > h2 {
+  font-size: 3.15rem;
+  margin: 0 auto;
+}
+
+.services > div > span {
+  font-size: 1.125rem;
+}
+
+.services ul {
+  display: inline-block;
+}
+
+.services figure {
   display: none;
+  position: absolute;
+  height: 60%;
+  top: 10%;
+  left: 50%;
+}
+
+.services video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.services li:last-child figure,
+.services li:last-child video {
+  display: block;
+}
+
+.services li:hover figure,
+.services li:hover video {
+  display: block;
+}
+
+.services li:hover ~ li figure,
+.services li:hover ~ li video {
+  display: none;
+}
+
+.services h3 {
+  color: #606060;
+  font-size: 1.75rem;
+}
+
+.services h3:hover {
+  color: red;
+}
+
+.services :not(h3) {
+font-weight: 300;
+}
+
+.services figcaption {
+  color: #ededed;
 }
 
 .tv-service {
